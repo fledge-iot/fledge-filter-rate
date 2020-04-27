@@ -12,7 +12,7 @@
 
    <a href="../../fledge-south-expression/index.html">fledge-south-expression</a>
 
-   .. |fledge-filter-threshold| raw:: html
+.. |fledge-filter-threshold| raw:: html
 
    <a href="../fledge-filter-threshold/index.html">fledge-filter-threshold</a>
 
@@ -29,11 +29,14 @@ until an interesting event occurs. The filter will read data at full
 rate from the input side and buffer data internally, sending out averages
 for each value over a time frame determined by the filter configuration.
 
-The user will provide two simple expressions that will be evaluated to
+The user can provide either one or two simple expressions that will be evaluated to
 form a trigger for the filter. One expressions will set the trigger and
 the other will clear it. When the trigger is set then the filter will
 no longer average the data over the configured time period, but will
-instead send the full bandwidth data out of the filter.
+instead send the full bandwidth data out of the filter. If the second expression, the
+one that clears the full rate sending of data is omitted then the full rate is
+cleared as soon as the trigger expression returns false. Alternatively the filter can be
+configured to clear the sending of full rate data after a fixed time.
 
 The filter also allows a pre-trigger time to be configured. In this
 case it will buffer this much data internally and when the trigger is
