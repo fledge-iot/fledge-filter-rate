@@ -21,10 +21,10 @@
 
    <a href="../fledge-filter-expression/index.html">fledge-filter-expression</a>
 
-Rate Control Filter
-===================
+Rate Filter
+===========
 
-A filter plugin that can be used to reduce the rate a reading is stored
+The *fledge-filter-rate* plugin that can be used to reduce the rate a reading is stored
 until an interesting event occurs. The filter will read data at full
 rate from the input side and buffer data internally, sending out averages
 for each value over a time frame determined by the filter configuration.
@@ -76,7 +76,7 @@ Rate filters are added in the same way as any other filters.
 
     - **Reduced collection rate**: The nominal data rate to send data out. This defines the period over which is outgoing data item is averaged.
 
-    - **Rate Units**: The units that the reduced collection rate is expressed in; per second, minute or hour
+    - **Rate Units**: The units that the reduced collection rate is expressed in; per second, minute, hour or day
 
       +----------+
       | |rate_3| |
@@ -108,8 +108,7 @@ Expression may contain any of the following...
 
   - Mathematical operators (+, -, \*, /, %, ^)
 
-  - Functions (min, max, avg, sum, abs, ceil, floor, round, roundn, exp, log, log10, logn, pow, root, sqrt, clamp, 
-inrange, swap)
+  - Functions (min, max, avg, sum, abs, ceil, floor, round, roundn, exp, log, log10, logn, pow, root, sqrt, clamp, inrange, swap)
 
   - Trigonometry (sin, cos, tan, acos, asin, atan, atan2, cosh, cot, csc, sec, sinh, tanh, d2r, r2d, d2g, g2d, hyp)
 
