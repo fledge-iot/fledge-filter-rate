@@ -117,4 +117,5 @@ Expression may contain any of the following...
   - Logical operators (and, nand, nor, not, or, xor, xnor, mand, mor)
 
 .. note::
-  this plugin is designed to work with streams with a single asset in the stream, there is no mechanism in the expression syntax to support multiple asset names.
+
+  This plugin is designed to work with streams with a single asset in the stream, there is no mechanism in the expression syntax to support multiple asset names.
