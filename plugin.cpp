@@ -21,7 +21,7 @@
 
 
 #define FILTER_NAME "rate"
-const char *default_config = QUOTE({
+static const char *default_config = QUOTE({
 		"plugin" : {
 			"description" : "Variable readings collection rate filter",
 			"type" : "string", 
