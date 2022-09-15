@@ -10,7 +10,7 @@
 
 .. |fledge-south-expression| raw:: html
 
-   <a href="../fledge-south-expression/index.html">fledge-south-expression</a>
+   <a href="../fledge-south-Expression/index.html">fledge-south-expression</a>
 
 .. |fledge-filter-threshold| raw:: html
 
